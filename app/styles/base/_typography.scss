@@ -1,0 +1,55 @@
+body, p {
+  font-family: 'Droid Serif', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 700;
+	line-height: 1.15;
+	color: $grey-dark;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 42px;
+  font-weight: 700;
+	line-height: 1.24;
+	color: $grey;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 1.0;
+	color: $grey;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+h4 {
+	font-size: 16px;
+  font-weight: 700;
+	line-height: 1.62;
+	color: $grey;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $grey;
+}
+
+h5 {
+	font-size: 12px;
+  font-weight: 700;
+	line-height: 1.5;
+	color: $grey-light;
+}

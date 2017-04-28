@@ -1,0 +1,17 @@
+.skill-stack {
+  li {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: $grey-light;
+  }
+}
+
+.social-stack {
+  li {
+    content: " ";
+    width: 32px;
+    height: 32px;
+    background-color: $grey-dark;
+  }
+}

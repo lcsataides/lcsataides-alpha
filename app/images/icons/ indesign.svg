@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / indesign</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-73.000000, -1257.000000)" fill-rule="nonzero" fill="#808080">
+            <g id="&lt;section&gt;-TL;-DR" transform="translate(7.000000, 525.000000)">
+                <g id="tl;dr-content" transform="translate(33.000000, 0.000000)">
+                    <g id="excel-with" transform="translate(0.000000, 682.000000)">
+                        <g id="icons-set" transform="translate(0.000000, 50.000000)">
+                            <g id="icon-/-indesign" transform="translate(33.000000, 0.000000)">
+                                <path d="M13.584,10.799 C12.332,10.799 11.6355,11.9075 11.6355,13.35 C11.6355,14.7595 12.332,15.79 13.5685,15.79 C14.3615,15.79 15.058,15.251 15.248,14.4115 C15.296,14.237 15.3115,14.047 15.3115,13.8405 L15.3115,12.6845 C15.3115,12.5255 15.295,12.3355 15.2635,12.1765 C15.089,11.4165 14.4715,10.799 13.584,10.799 Z" id="Shape"></path>
+                                <path d="M0,0 L0,24 L24,24 L24,0 L0,0 Z M8.625,17.183 L6.6765,17.183 L6.6765,6.5055 L8.625,6.5055 L8.625,17.183 Z M15.58,17.183 L15.501,15.964 L15.47,15.964 C15.01,16.819 14.0755,17.358 12.9505,17.358 C11.113,17.358 9.6555,15.7895 9.6555,13.4125 C9.6395,10.8305 11.256,9.2935 13.11,9.2935 C14.1715,9.2935 14.9315,9.737 15.28,10.3075 L15.312,10.3075 L15.312,5.935 L17.26,5.935 L17.26,15.013 C17.26,15.8055 17.292,16.661 17.3235,17.1835 L15.58,17.1835 L15.58,17.183 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

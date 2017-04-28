@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / illustrator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-40.000000, -1257.000000)" fill-rule="nonzero" fill="#808080">
+            <g id="&lt;section&gt;-TL;-DR" transform="translate(7.000000, 525.000000)">
+                <g id="tl;dr-content" transform="translate(33.000000, 0.000000)">
+                    <g id="excel-with" transform="translate(0.000000, 682.000000)">
+                        <g id="icons-set" transform="translate(0.000000, 50.000000)">
+                            <g id="icon-/-illustrator">
+                                <path d="M9.836,8.4635 L9.8025,8.4635 C9.6355,9.115 9.4685,9.9 9.268,10.568 L8.4,13.34 L11.289,13.34 L10.404,10.568 C10.187,9.883 10.003,9.1145 9.836,8.4635 Z" id="Shape"></path>
+                                <path d="M0,0 L0,24 L24,24 L24,0 L0,0 Z M12.6585,18.083 L11.6395,14.893 L8.0655,14.893 L7.0965,18.083 L4.9765,18.083 L8.5835,6.8265 L11.2055,6.8265 L14.863,18.083 L12.6585,18.083 Z M18.0045,18.083 L15.933,18.083 L15.933,9.9495 L18.0045,9.9495 L18.0045,18.083 Z M16.952,8.781 C16.267,8.781 15.8165,8.2965 15.8165,7.6785 C15.8165,7.0435 16.2845,6.5595 16.969,6.5595 C17.6705,6.5595 18.1045,7.0435 18.1215,7.6785 C18.121,8.2965 17.6705,8.781 16.952,8.781 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

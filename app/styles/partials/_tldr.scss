@@ -1,0 +1,54 @@
+.boxed {
+  padding: 0 16px;
+  background-color: #fff;
+  box-shadow: $shadow;
+}
+
+.profile {
+  @include grid-container;
+
+  .section-title {
+    display: block;
+  }
+
+  .profile-info {
+    @media #{$medium-up} {
+      @include grid-column(3);
+      top: -7em;
+      float: right;
+    }
+
+    margin-left: 16px;
+    position: relative;
+
+    .avatar {
+      display: block;
+      margin: 0;
+    }
+
+    .attached {
+      position: relative;
+      top: -1em;
+      left: -2em;
+      margin: 0;
+    }
+  }
+
+  .profile-stack-box {
+    @media #{$medium-up}{
+      @include grid-column(3);
+    }
+    display: block;
+  }
+
+  .profile-stack-title {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .profile-experience {
+    li {
+      margin-bottom: 16px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.folio {
+  position: relative;
+  z-index: -1;
+  background-color: #fff;
+  margin-top: -150px;
+  padding-top: 150px;
+}
+
+.projects {
+  @include grid-container;
+
+  .section-title {
+    display: block;
+  }
+
+  .project-section {
+    margin-top: 64px;
+  }
+
+  .project-box {
+    @include grid-column(6)
+    height: 176px;
+    background-color: $grey-dark;
+    margin-bottom: 48px;
+  }
+
+  .project-title {
+    color: $grey-light;
+    margin-left: 16px;
+    position: relative;
+    bottom: -88px;
+  }
+
+  .project-img {
+  }
+}

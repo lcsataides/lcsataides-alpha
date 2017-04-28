@@ -1,0 +1,19 @@
+.section-title {
+  position: relative;
+  left: -32px;
+
+  .dash {
+    position: relative;
+    height: 0;
+    width: 80px;
+    border-bottom: 3px solid $grey;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h4 {
+    display: inline-block;
+    padding-left: 1em;
+    text-transform: uppercase;
+  }
+}
