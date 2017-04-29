@@ -38,3 +38,12 @@
 .linkedin-icon { background: url('../images/icons/linkedin.svg') no-repeat center center; }
 .behance-icon { background: url('../images/icons/behance.svg') no-repeat center center; }
 .github-icon { background: url('../images/icons/github.svg') no-repeat center center; }
+
+.heart-icon {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  background: url('../images/icons/heart-icon.svg') no-repeat center center;
+  }

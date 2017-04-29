@@ -13,19 +13,6 @@ const reload = browserSync.reload;
 
 var dev = true;
 
-gulp.task('templates', function(){
-  gulp.src(['file.txt'])
-    .pipe(replace(/foo(.{3})/g, '$1foo'))
-    .pipe(gulp.dest('build/file.txt'));
-});
-
-
-gulp.task('templates', function(){
-  gulp.src(['file.txt'])
-    .pipe(replace('bar', 'foo'))
-    .pipe(gulp.dest('build/file.txt'));
-});
-
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -122,7 +109,6 @@ gulp.task('serve', () => {
 
     gulp.watch([
       'app/*.html',
-      'app/projects/*.html',
       'app/images/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
