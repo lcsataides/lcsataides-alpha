@@ -1,17 +1,40 @@
 .skill-stack {
+  margin-bottom: 64px;
+  text-align: center;
+
   li {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-color: $grey-light;
+    display: inline-block;
+  }
+
+  span {
+    content: " ";
+    display: block;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
+.illustrator-icon {  background: url('../images/icons/illustrator.svg') no-repeat center center; }
+.photoshop-icon {  background: url('../images/icons/photoshop.svg') no-repeat center center; }
+.indesign-icon {  background: url('../images/icons/indesign.svg') no-repeat center center; }
+.sketch-icon {  background: url('../images/icons/sketch.svg') no-repeat center center; }
+.html5-icon {  background: url('../images/icons/html5.svg') no-repeat center center; }
+.sass-icon {  background: url('../images/icons/sass.svg') no-repeat center center; }
+.js-icon {  background: url('../images/icons/js.svg') no-repeat center center; }
+
+
 .social-stack {
-  li {
-    content: " ";
-    width: 32px;
-    height: 32px;
-    background-color: $grey-dark;
-  }
+  @extend .skill-stack;
 }
+
+.facebook-icon { background: url('../images/icons/facebook.svg') no-repeat center center; }
+.linkedin-icon { background: url('../images/icons/linkedin.svg') no-repeat center center; }
+.behance-icon { background: url('../images/icons/behance.svg') no-repeat center center; }
+.github-icon { background: url('../images/icons/github.svg') no-repeat center center; }

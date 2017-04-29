@@ -5,11 +5,26 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
+const replace = require('gulp-replace');
+
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 var dev = true;
+
+gulp.task('templates', function(){
+  gulp.src(['file.txt'])
+    .pipe(replace(/foo(.{3})/g, '$1foo'))
+    .pipe(gulp.dest('build/file.txt'));
+});
+
+
+gulp.task('templates', function(){
+  gulp.src(['file.txt'])
+    .pipe(replace('bar', 'foo'))
+    .pipe(gulp.dest('build/file.txt'));
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -56,25 +71,23 @@ gulp.task('lint:test', () => {
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
-    .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
-    .pipe($.if(/\.html$/, $.htmlmin({
-      collapseWhitespace: true,
-      minifyCSS: true,
-      minifyJS: {compress: {drop_console: true}},
-      processConditionalComments: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true
-    })))
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('images', () => {
-  return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin()))
-    .pipe(gulp.dest('dist/images'));
+gulp.task('clear_cache', function (done) {
+    return $.cache.clearAll(done);
+});
+
+gulp.task('images', ['clear_cache'],function () {
+    return gulp.src('app/images/**/*')
+        .pipe($.filter('*.{jpg,jpeg,svg,gif,png}'))
+        .pipe($.cache($.imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true
+        })))
+        .pipe(gulp.dest('dist/images'))
+        .pipe($.size());
 });
 
 gulp.task('fonts', () => {
@@ -95,7 +108,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('serve', () => {
-  runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
+  runSequence(['clean', 'wiredep'], ['styles', 'images', 'scripts', 'fonts'], () => {
     browserSync.init({
       notify: false,
       port: 9000,
@@ -109,12 +122,14 @@ gulp.task('serve', () => {
 
     gulp.watch([
       'app/*.html',
+      'app/projects/*.html',
       'app/images/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
+    gulp.watch('app/images/**/*', ['images']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
   });

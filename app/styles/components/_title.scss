@@ -1,11 +1,12 @@
 .section-title {
+  display: block;
   position: relative;
-  left: -32px;
+  left: -40px;
 
   .dash {
     position: relative;
     height: 0;
-    width: 80px;
+    width: 56px;
     border-bottom: 3px solid $grey;
     display: inline-block;
     vertical-align: middle;

@@ -2,6 +2,10 @@
   @include grid-container;
   margin-bottom: 96px;
 
+  .welcome-message {
+    margin-left: 16px;
+  }
+
   .section-title {
     margin-bottom: 24px;
   }

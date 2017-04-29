@@ -1,36 +1,89 @@
 .folio {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background-color: #fff;
-  margin-top: -150px;
-  padding-top: 150px;
+  margin-top: -144px;
+  padding-top: 144px;
+  padding-bottom: 104px;
 }
 
 .projects {
   @include grid-container;
+  z-index: 2;
+  position: relative;
 
   .section-title {
     display: block;
   }
 
   .project-section {
+    @include grid-container;
     margin-top: 64px;
   }
 
   .project-box {
-    @include grid-column(6)
+    @media #{$medium-up} {
+      @include grid-column(6);
+    }
     height: 176px;
     background-color: $grey-dark;
-    margin-bottom: 48px;
-  }
-
-  .project-title {
-    color: $grey-light;
-    margin-left: 16px;
-    position: relative;
-    bottom: -88px;
+    margin-bottom: 16px;
   }
 
   .project-img {
+    background-size: cover;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+      transition: all ease-in 0.2s;
+    }
+  }
+
+  .gradient-box{
+    &:hover {
+    background-image: -webkit-linear-gradient($greyer-0 0%, $greyer-50 100%);
+    background-image: -moz-linear-gradient($greyer-0 0%, $greyer-50 100%);
+    background-image: -o-linear-gradient($greyer-0 0%, $greyer-50 100%);
+    background-image: linear-gradient($greyer-0 0%, $greyer-50 100%);
+    }
+  }
+
+  .datenhaus {
+    background: url('../images/opening-images/daten-haus-opening-img.png') center center;
+  }
+
+  .looknfeel {
+    background: url('../images/opening-images/lookn-feel-opening-img.png') center center;
+  }
+
+  .zmd {
+    background: url('../images/opening-images/zmd-opening-img.png') center center;
+  }
+
+  .mrbrownie {
+    background: url('../images/opening-images/mr-brownie-opening-img.png') center center;
+  }
+
+  .project-title {
+    position: relative;
+    bottom: -88px;
+    margin-left: 16px;
+
+    h3, p {
+      color: $grey-light;
+    }
+  }
+
+  .projects-cta {
+    display: block;
+    margin-top: 64px;
+    text-align: center;
+
+    .anchor {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
   }
 }

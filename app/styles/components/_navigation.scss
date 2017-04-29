@@ -1,0 +1,116 @@
+.navegacao {
+  display: block;
+  margin-bottom: 13em;
+}
+
+.logo {
+  margin-left: calc(10% - 16px);
+  margin-top: 16px;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+
+  a {
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    transition: 0.3s;
+
+    h2 {
+      color: #fff;
+    }
+  }
+}
+
+.overlay-open {
+  height: 100%;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  left: 15%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.open-close-btn {
+  position: relative;
+  top: 16px;
+  left: calc(93% - 36px);
+  z-index: 10;
+}
+
+
+/* Hamburger Icon */
+#hamburger-icon{
+  position: fixed;
+  display: block;
+  width: 48px;
+  height: 24px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+
+  span {
+    display: block;
+    position: fixed;
+    height: 8px;
+    width: 100%;
+    background: $grey;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+
+    &:nth-child(1){
+      top: 0px;
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+      top: 16px;
+    }
+
+    &:nth-child(4) {
+      top: 32px;
+    }
+  }
+}
+
+.hamburguer-open {
+  span {
+    background: #fff !important;
+
+    &:nth-child(1) {
+      top: 18px;
+      width: 0;
+      left: 50%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(4) {
+      top: 18px;
+      width: 0;
+      left: 50%;
+    }
+  }
+}

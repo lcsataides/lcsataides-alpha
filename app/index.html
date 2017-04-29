@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="EN-US">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -31,8 +31,27 @@
   </head>
 
   <body>
-    <header>
-      <nav></nav>
+    <header class="navegacao">
+      <div class="logo">
+        <a href="#home"><img src="images/logo-lucas.svg" height="50px" alt="Logo Lucas Ataides"></a>
+      </div>
+      <nav class="navegacao-menu">
+        <a id="hamburger-icon" href="#" class="open-close-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div id="nav" class="overlay">
+          <div class="overlay-content">
+            <a href="#home"><h2>Home</h2></a>
+            <a href="#tldr"><h2>About</h2></a>
+            <a href="#projects"><h2>Projects</h2></a>
+            <a href="#contact"><h2>Contact</h2></a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--welcome section-->
@@ -44,8 +63,8 @@
           <p>A Designer and Front-End Developer, based in Brasília, Brazil.</p>
         </div>
 
-        <a href="#" class="anchor anchor-default">Who are you?</a>
-        <a href="#" class="anchor anchor-default">What can you do?</a>
+        <a href="#tldr" class="anchor anchor-default">Who are you?</a>
+        <a href="#projects" class="anchor anchor-default">What can you do?</a>
       </div>
     </section>
     <!--end welcome section-->
@@ -53,88 +72,93 @@
     <!--tldr section-->
     <section>
       <div id="tldr" class="container boxed profile">
-        <span class="section-title"><hr class="dash"><h4>TL; DR</h4></span>
-        <div class="profile-info">
-          <img class="avatar" src="images/profile-pic.png" alt="Foto do Lucas">
-          <a href="#" class="attached anchor anchor-button">Full Resume</a>
-        </div>
+          <span class="section-title"><hr class="dash"><h4>TL; DR</h4></span>
+          <div class="profile-info">
+            <img class="avatar" src="images/profile-pic.png" alt="Foto do Lucas">
+            <a href="portfolio.pdf" class="attached anchor anchor-button">Full Resume</a>
+          </div>
 
-        <div class="profile-stack-box">
-          <h4 class="profile-stack-title">me:</h4>
-          <p>I’m 23 years old. I’m a Designer and self-taught Front-End Developer.
-          I have been switching through Advertising, Brand and Web development since 2011.</p>
-        </div>
+          <div class="profile-stack-box">
+            <h4 class="profile-stack-title">me:</h4>
+            <p>I’m 23 years old. I’m a Designer and self-taught Front-End Developer.
+            I have been switching through Advertising, Brand and Web development since 2011.</p>
+          </div>
 
-        <div class="profile-stack-box">
-          <h4 class="profile-stack-title">working pinnacle:</h4>
-          <ul class="profile-experience">
-            <li><p><span>+5</span> years as an Art Director;</p></li>
-            <li><p><span>+3</span> years as a Designer;</p></li>
-            <li><p><span>+1</span> year as Front-End Dev.</p></li>
-          </ul>
-        </div>
+          <div class="profile-stack-box">
+            <h4 class="profile-stack-title">working pinnacle:</h4>
+            <ul class="profile-experience">
+              <li><p><span>+5</span> years as an Art Director;</p></li>
+              <li><p><span>+3</span> years as a Designer;</p></li>
+              <li><p><span>+1</span> year as Front-End Dev.</p></li>
+            </ul>
+          </div>
 
-        <div class="profile-stack-box">
-          <h4 class="profile-stack-title">excel with:</h4>
-          <ul id="" class="skill-stack profile-skills">
-            <li class="illustrator-icon"></li>
-            <li class="photoshop-icon"></li>
-            <li class="indesign-icon"></li>
-            <li class="sketch-icon"></li>
-            <li class="html5-icon"></li>
-            <li class="sass-icon"></li>
-            <li class="js-icon"></li>
-          </ul>
-        </div>
-        <!--end profile description-->
-      </div>
-      <!--end boxed profile-->
+          <div class="profile-stack-box">
+            <h4 class="profile-stack-title">excel with:</h4>
+            <ul id="" class="skill-stack">
+              <li><span class="illustrator-icon"></span></li>
+              <li><span class="photoshop-icon"></span></li>
+              <li><span class="indesign-icon"></span></li>
+              <li><span class="sketch-icon"></span></li>
+              <li><span class="html5-icon"></span></li>
+              <li><span class="sass-icon"></span></li>
+              <li><span class="js-icon"></span></li>
+            </ul>
+          </div>
+          <!--end profile description-->
+      </div> <!--end profile-->
     </section>
     <!--end tldr section-->
 
     <!--projects section-->
     <section class="folio">
-        <div id="portfolio" class="container projects">
+        <div id="projects" class="container projects">
           <span class="section-title"><hr class="dash"><h4>Projects</h4></span>
 
           <div class="project-section">
-            <div class="project-box project-img datenhaus">
-              <a href="projects/datenhaus.html">
+
+            <a href="#">
+              <div class="project-box project-img datenhaus">
                 <div class="project-title">
                   <h3>Daten Haus</h3>
                   <p>Brand, Visual Identity</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
 
-            <div class="project-box project-img looknfeel">
-              <a href="projects/looknfeel.html">
+            <a href="#">
+              <div class="project-box project-img looknfeel">
                 <div class="project-title">
                   <h3>Look'n Feel</h3>
                   <p>Rebrand, UI & stationary</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
 
-            <div class="project-box project-img zmd">
-              <a href="projects/zmd.html">
+            <a href="#">
+              <div class="project-box project-img zmd">
                 <div class="project-title">
                   <h3>Zero Meia Dois</h3>
                   <p>Brand, Visual Identity</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
 
-            <div class="project-box project-img mrbrownie">
-              <a href="projects/mrbrownie.html">
+            <a href="#">
+              <div class="project-box project-img mrbrownie">
                 <div class="project-title">
                   <h3>Mr. Brownie</h3>
                   <p>Rebrand, Advertising</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+
           </div> <!-- end project section-->
-        </div> <!-- end projects - container-->
+
+          <div class="projects-cta">
+            <p>Do you want to see more? Check out my <a href="https://cargocollective/lcsataides" class="anchor anchor-default">cargo collective</a> for more!</p>
+          </div>
+        </div> <!-- end projects container-->
     </section>
     <!--end projects section-->
 
@@ -146,11 +170,10 @@
           <p>I must say I’m feedback-driven. So let me know if you have any critics, comments or even a random talk.</p>
           <a href="malito:lcsataides@gmail.com" class="anchor anchor-default e-mail">lcsataides@gmail.com</a>
           <ul id="" class="social-stack social-icons">
-            <li class="facebook-icon"></li>
-            <li class="linkedin-icon"></li>
-            <li class="behance-icon"></li>
-            <li class="github-icon"></li>
-            <li class="slack-icon"></li>
+            <li><a href="https://facebook.com/lcsataides/"><span class="facebook-icon"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/lcsataides/"><span class="linkedin-icon"></span></a></li>
+            <li><a href="https://www.behance.net/lcsataides"><span class="behance-icon"></span></a></li>
+            <li><a href="https://github.com/lcsataides"><span class="github-icon"></span></a></li>
           </ul>
         </div> <!--end contact-info-->
       </div> <!--end contact-->
@@ -158,7 +181,7 @@
     <!--end contact section-->
 
     <footer>
-      <p>With <span class="heart-icon"></span> by Lucas Ataides. © Lucas Ataides, 2017. All rights reserved.</p>
+      <p>With <span class="heart-icon"></span> by Lucas Ataides. © Lucas Ataides, 2017. <br/> All rights reserved.</p>
     </footer>
 
     <!-- build:js scripts/vendor.js -->

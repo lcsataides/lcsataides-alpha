@@ -2,12 +2,14 @@
 @import "bower_components/neat/core/_neat.scss";
 // endbower
 
-@import "base/_reset.css";
+@import "base/_reset.scss";
 @import "base/_colors.scss";
 @import "base/_grid.scss";
 @import "base/_typography.scss";
 @import "base/_variables.scss";
 @import "components/_buttons.scss";
+@import "components/_icons.scss";
+@import "components/_navigation.scss";
 @import "components/_title.scss";
 @import "partials/_contact.scss";
 @import "partials/_projects.scss";

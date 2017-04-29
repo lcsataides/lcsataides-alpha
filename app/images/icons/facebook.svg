@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>social icon / facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Layout-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-71.000000, -2270.000000)" fill="#808080">
+            <g id="&lt;section&gt;-contact" transform="translate(0.000000, 2028.000000)">
+                <g id="Social-Icons" transform="translate(68.000000, 239.000000)">
+                    <g id="social-icon-/-facebook">
+                        <path d="M20.006625,3 L3.993375,3 C3.444375,3 3,3.444375 3,3.993375 L3,20.006625 C3,20.555625 3.444375,21 3.993375,21 L12.61425,21 L12.61425,14.0295 L10.2675,14.0295 L10.2675,11.31375 L12.61425,11.31375 L12.61425,9.307875 C12.61425,6.983625 14.034,5.719125 16.1085,5.719125 C17.101875,5.719125 17.95575,5.791125 18.204375,5.824875 L18.204375,8.254875 L16.764375,8.254875 C15.639375,8.254875 15.42,8.794875 15.42,9.582375 L15.42,11.314875 L18.10875,11.314875 L17.76,14.037375 L15.42,14.037375 L15.42,21 L20.006625,21 C20.555625,21 21,20.555625 21,20.006625 L21,3.993375 C21,3.444375 20.555625,3 20.006625,3" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
